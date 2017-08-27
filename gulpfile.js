@@ -30,7 +30,8 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 gulp.task('sprite', function () { // Создаем таск sprite
     var spriteData = gulp.src('src/sprite/*.png').pipe(spritesmith({ // Настройка спрайта
         imgName: 'sprite.png',
-        cssName: 'sprite.css'
+        cssName: 'sprite.css',
+        imgPath: '../img/sprite.png'
     }));
     // return spriteData.pipe(gulp.dest('app/img/')); // выгружаем спрайты в папку img
     var imgStream = spriteData.img
@@ -58,8 +59,8 @@ gulp.task('css-libs', ['css'], function() {
 });
 
 gulp.task('watch', ['browser-sync', 'css', 'scripts', 'sprite'], function() {
-    gulp.watch('src/css/**/*.css', ['css']); // Наблюдение за css файлами в папке css
     gulp.watch('src/sprite/*.png', ['sprite']); // Наблюдение за папкой с картинками для спрайтов  папке sprite
+    gulp.watch('src/css/**/*.css', ['css']); // Наблюдение за css файлами в папке css
     gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
     gulp.watch('app/js/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js
 });
