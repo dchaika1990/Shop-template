@@ -89,8 +89,66 @@ header .top-header .phones-list li + li{
 header .top-header .phones-list li span.custom-icon{
     margin-right: 10px;
 }
+header .top-header .social-nav a + a{
+    margin-left: 22px;
+}
+header .top-header .social-nav a:hover{
+    color: #ff5913;
+}
+.bottom-header .logo{
+    padding: 40px 0;
+}
+.bottom-header .header-nav{
+    margin-left: 83px;
+}
+.bottom-header .header-nav a{
+    font-size: 16px;
+}
+.bottom-header .header-nav a + a{
+    margin-left: 40px;
+}
+.bottom-header .header-nav a:hover{
+    color: #ff5913;
+    text-decoration: none;
+}
+.bottom-header .user-controls{
+    margin-left: auto;
+}
+.bottom-header .user-controls span + span{
+    margin-left: 34px;
+}
+.bottom-header .user-controls span.icon-search-ic:hover{
+    background-position: -81px 0px;
+}
+.bottom-header .user-controls span.icon-user-ic:hover{
+    background-position: 0px -59px;
+}
+.bottom-header .user-controls span.icon-cart-ic{
+    position: relative;
+}
+.bottom-header .user-controls span.icon-cart-ic:hover{
+    background-position: -20px -59px;
+}
+.bottom-header .user-controls span.icon-cart-ic span{
+    position: absolute;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #34404b;
+    color: #fff;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-110%);
+        -ms-transform: translateX(-50%) translateY(-110%);
+            transform: translateX(-50%) translateY(-110%);
+    text-align: center;
+    line-height: 18px;
+}
 /*DEFAULT COMPONENT END*/
 
 /*ALL STALES START*/
+
 
 /*ALL STALES END*/
