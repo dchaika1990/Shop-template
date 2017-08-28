@@ -211,8 +211,6 @@ span.circle + span{
 
 /*ALL STALES START*/
 
-/*items-carousel*/
-
 .items-carousel{
     min-height: 650px;
     background: url("../img/carousel-img-1.jpg") no-repeat center/cover;
@@ -247,5 +245,55 @@ span.circle + span{
 .items-carousel .item-carousel-description .price-wrapper a:hover span.icon-cart-ic{
     background-position: -20px -59px;
 }
-
+.full-set{
+    padding: 0 60px;
+}
+.full-set .discount{
+    position: relative;
+}
+.full-set .block1,
+.full-set .block2{
+    display: inline-block;
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 50px;
+}
+.full-set .block1{
+    background-color: #ff5912;
+    -webkit-transform: rotate(35deg);
+        -ms-transform: rotate(35deg);
+            transform: rotate(35deg);
+    z-index: 8;
+}
+.full-set .block2{
+    background-color: #ff9060;
+    -webkit-transform: rotate(125deg);
+        -ms-transform: rotate(125deg);
+            transform: rotate(125deg);
+}
+.full-set .discount-title{
+    position: absolute;
+    color: #fff;
+    font-family: Harmonia_italic;
+    font-size: 12px;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(75%) translateY(40%);
+        -ms-transform: translateX(75%) translateY(40%);
+            transform: translateX(75%) translateY(40%);
+}
+.full-set .discount-percent{
+    position: absolute;
+    color: #fff;
+    font-family: Harmonia_black;
+    font-size: 18px;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(31%) translateY(115%);
+        -ms-transform: translateX(31%) translateY(115%);
+            transform: translateX(31%) translateY(115%);
+}
 /*ALL STALES END*/
