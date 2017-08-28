@@ -71,6 +71,42 @@ button{
 .title.big{
     font-size: 52px;
 }
+.default-section{
+    padding: 60px 0;
+}
+.subtitle{
+    display: block;
+    font-size: 16px;
+    color: #495662;
+    margin-bottom: 70px;
+}
+.item{
+    background-color: #fff;
+    padding: 30px 10px;
+    transition: all .3s linear;
+    text-align: center;
+}
+.item:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+.item-img{
+    height: 220px;
+}
+.item-title,
+.item-price{
+    font-family: Harmonia_bold;
+    font-size: 18px;
+}
+.item-title{
+    color: #34404b;
+    margin: 30px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.item-price{
+    color: #ff5912;
+}
 header{
     background-color: #fff;
 }
@@ -139,6 +175,21 @@ header .top-header .social-nav a:hover{
     text-align: center;
     line-height: 18px;
 }
+.load-more{
+    margin-top: 80px;
+    padding: 26px 10px;
+    background-color: #fff;
+}
+span.circle{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ff5913;
+}
+span.circle + span{
+    margin-left: 3px;
+}
 /*DEFAULT COMPONENT END*/
 
 /*ALL STALES START*/
@@ -148,6 +199,7 @@ header .top-header .social-nav a:hover{
 .items-carousel{
     min-height: 650px;
     background: url("../img/carousel-img-1.jpg") no-repeat center/cover;
+    margin-bottom: 60px;
 }
 .items-carousel .item-carousel-description > span{
     font-family: Harmonia_semibold;
