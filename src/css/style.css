@@ -625,4 +625,14 @@ footer section{
 .category-wrap .categories-list li:hover{
     color: #ff5912;
 }
+.product-wrap{
+    padding: 100px 125px;
+}
+.size-radio input[type="radio"]{
+    display: none;
+}
+.size-radio label{
+    font-size: 14px;
+    font-family: Harmonia_semibold;
+}
 /*ALL STALES END*/
