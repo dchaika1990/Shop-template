@@ -10,7 +10,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
-    <!--jQuery UI style-->
+    <!-- jQuery UI style -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/flexslider.css">
 
@@ -75,23 +75,23 @@
 
 <!--MAIN START-->
 <main>
-    <div class="product-wrap">
+    <div class="product-wrap white-bg">
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="product-carusel">
+                    <div class="product-carusel center-block">
                         <div class="flexslider">
-                            <!--<ul class="slides">-->
-                                <!--<li data-thumb="img/item-img-1.png">-->
-                                    <!--<img src="img/item-img-1.png" />-->
-                                <!--</li>-->
-                                <!--<li data-thumb="img/item-img-1.png">-->
-                                    <!--<img src="img/item-img-1.png" />-->
-                                <!--</li>-->
-                                <!--<li data-thumb="img/item-img-1.png">-->
-                                    <!--<img src="img/item-img-1.png" />-->
-                                <!--</li>-->
-                            <!--</ul>-->
+                            <ul class="slides">
+                                <li data-thumb="img/product-slide-1.png">
+                                    <img src="img/product-slide-1.jpg" />
+                                </li>
+                                <li data-thumb="img/product-slide-1.png">
+                                    <img src="img/product-slide-1.jpg" />
+                                </li>
+                                <li data-thumb="img/product-slide-1.png">
+                                    <img src="img/product-slide-1.jpg" />
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -102,7 +102,7 @@
                                 <form name="product-option " class="flex-container">
                                     <div class="chose-size flex-container align-center">
                                         <span>Choose Size</span>
-                                        <div class="size-radio-btn-group">
+                                        <div class="size-radio-btn-group flex-container align-center">
                                             <div class="size-radio">
                                                 <input type="radio" id="sSize" name="radio">
                                                 <label for="sSize">s</label>
@@ -112,7 +112,7 @@
                                                 <label for="nSize">n</label>
                                             </div>
                                             <div class="size-radio">
-                                                <input type="radio" id="lSize" name="radio">
+                                                <input type="radio" id="lSize" name="radio" checked>
                                                 <label for="lSize">l</label>
                                             </div>
                                             <div class="size-radio">
@@ -122,12 +122,13 @@
                                         </div>
                                     </div>
                                     <div class="quantity">
-
+                                        <span></span>
                                     </div>
                                 </form>
                             </div>
                             <div class="order-now">
-
+                                <span>Choose Quantity</span>
+                                <input type="number" name="Quantity" class="custom-number">
                             </div>
                         </div>
                     </div>

@@ -49,7 +49,7 @@ $( function() {
 
 
 
-    fromInput.on('change', function (e) {
+    fromInput.on('keyup', function (e) {
 
         var values = range.slider( "option", "values");
         $(this).attr('max', values[1]);
@@ -58,7 +58,7 @@ $( function() {
 
     });
 
-    toInput.on('change', function (e) {
+    toInput.on('keyup', function (e) {
 
         var values = range.slider( "option", "values");
         $(this).attr('min', values[0]);
@@ -71,7 +71,7 @@ $( function() {
     $(window).load(function() {
         $('.flexslider').flexslider({
             animation: "slide",
-            controlNav: "thumbnails",
+            controlNav: "thumbnails"
         });
     });
 });

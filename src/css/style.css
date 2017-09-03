@@ -491,6 +491,7 @@ footer section{
         /*KIT*/
 .kit{
     padding: 20px 60px;
+    border: 1px solid #eaedef;
 }
 .sales-block{
     position: relative;
@@ -543,6 +544,7 @@ footer section{
     padding: 32px 60px;
     justify-content: center;
     text-align: center;
+    border: 1px solid #eaedef;
 }
 .adv-area .adv-area-content .adv-area-title{
     font-size: 16px;
@@ -638,14 +640,93 @@ footer section{
 .category-wrap .categories-list li:hover{
     color: #ff5912;
 }
-.product-wrap{
-    padding: 100px 125px;
+.range{
+    margin-top: 65px;
+}
+span.min-value,
+span.max-value{
+    position: absolute;
+    top: -2em;
+    font-size: 14px;
+    color: #34404b;
+    font-family: Harmonia_semibold;
+    left: 50%;
+    transform: translate(-50%);
+}
+.ui-widget.ui-widget-content {
+    border: none;
+    background-color: #edf0f2;
+    height: 3px;
+}
+.ui-slider-horizontal .ui-slider-range {
+    background-color: #34404b;
+}
+.ui-state-default,
+.ui-widget-content
+.ui-state-default,
+.ui-widget-header
+.ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active,
+html .ui-button.ui-state-disabled:focus{
+    border: none;
+    outline-color: transparent;
+    background: #454545;
+    font-weight: normal;
+    color: #454545;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+}
+.range-input-reoup +.range-input-reoup{
+    margin-left: 20px;
+}
+.range-input-reoup label{
+    margin-top: 40px;
+    font-size: 14px;
+    font-family: Harmonia_semibold;
+    margin-right: 10px;
+}
+.range-input-reoup input{
+    background-color: #edf0f2;
+    /*height: 25px;*/
+    color: #454545;
+    padding: 5px;
+    width: 45px;
+}
+.chose-size span{
+    margin-right: 20px;
+    font-size: 18px;
+    color: #34404b;
 }
 .size-radio input[type="radio"]{
     display: none;
 }
 .size-radio label{
     font-size: 14px;
+    cursor: pointer;
+    color: #34404b;
     font-family: Harmonia_semibold;
+    text-transform: uppercase;
+}
+.size-radio:not(:first-child):before{
+    content: '-';
+    display: inline-block;
+    margin-left: -10px;
+    margin-right: 5px;
+}
+.size-radio input[type="radio"]:checked + label{
+    color: #ff5912;
+    font-size: 18px;
+}
+.size-radio + .size-radio{
+    margin-left: 20px;
+}
+.product-wrap{
+    padding: 100px 125px;
+}
+.product-carusel{
+    width: 330px;
 }
 /*ALL STALES END*/
