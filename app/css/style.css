@@ -139,16 +139,16 @@ label{
     color: #495662;
     margin-bottom: 70px;
 }
-/*.checkbox-group + .checkbox-group{*/
-    /*margin-top: 33px;*/
-/*}*/
+.checkbox-group + .checkbox-group{
+    margin-top: 40px;
+}
 .checkbox-group input[type="checkbox"]{
     display: none;
 }
 .checkbox-group label{
     font-family: Harmonia_semibold;
     font-size: 16px;
-    line-height: 50px;
+    /*line-height: 50px;*/
     color: #34404b;
     cursor: pointer;
 }
@@ -167,13 +167,16 @@ label{
 .checkbox-group input[type="checkbox"]:checked + label:before{
     border-color: #ff5912;
 }
+.radio-group +.radio-group{
+    margin-top: 40px;
+}
 .radio-group input[type="radio"]{
     display: none;
 }
 .radio-group label{
     font-family: Harmonia_semibold;
     font-size: 16px;
-    line-height: 50px;
+    /*line-height: 50px;*/
     color: #34404b;
     cursor: pointer;
 }
@@ -211,7 +214,7 @@ header .top-header .social-nav a + a{
 header .top-header .social-nav a:hover{
     color: #ff5913;
 }
-.bottom-header .logo{
+.bottom-header{
     padding: 40px 0;
 }
 .bottom-header .header-nav{
@@ -229,22 +232,25 @@ header .top-header .social-nav a:hover{
 .bottom-header .user-controls{
     margin-left: auto;
 }
-.bottom-header .user-controls span + span{
+.bottom-header .user-controls li{
+    cursor: pointer;
+}
+.bottom-header .user-controls li + li{
     margin-left: 34px;
 }
-.bottom-header .user-controls span.icon-search-ic:hover{
+.bottom-header .user-controls li.icon-search-ic:hover{
     background-position: -81px 0px;
 }
-.bottom-header .user-controls span.icon-user-ic:hover{
+.bottom-header .user-controls li.icon-user-ic:hover{
     background-position: 0px -59px;
 }
-.bottom-header .user-controls span.icon-cart-ic{
+.bottom-header .user-controls li.icon-cart-ic{
     position: relative;
 }
-.bottom-header .user-controls span.icon-cart-ic:hover{
+.bottom-header .user-controls li.icon-cart-ic:hover{
     background-position: -20px -59px;
 }
-.bottom-header .user-controls span.icon-cart-ic span{
+.bottom-header .user-controls li.icon-cart-ic span{
     position: absolute;
     display: inline-block;
     width: 18px;
@@ -269,6 +275,7 @@ header .top-header .social-nav a:hover{
 }
 span.circle{
     display: inline-block;
+    vertical-align: middle;
     width: 8px;
     height: 8px;
     -webkit-border-radius: 50%;
@@ -416,11 +423,11 @@ span.circle + span{
     font-size: 14px;
     color: #34404b;
 }
+footer{
+    padding: 90px 0;
+}
 footer section{
     margin-top: 60px;
-}
-.footer-content{
-    padding: 90px 0;
 }
 .footer-content .footer-logo a img{
     margin-bottom: 15px;
@@ -432,8 +439,11 @@ footer section{
 }
 .footer-content .footer-nav-list li{
     font-size: 14px;
-    line-height: 30px;
     color: #28313b;
+    cursor: pointer;
+}
+.footer-content .footer-nav-list li + li{
+    margin-top: 20px;
 }
 .footer-content .footer-nav-list li:before{
     content: '';
@@ -506,8 +516,7 @@ footer section{
 
         /*KIT*/
 .kit{
-    padding: 10px 60px;
-    height: 100px;
+    padding: 20px 60px;
 }
 .sales-block{
     position: relative;
@@ -563,7 +572,7 @@ footer section{
     margin-right: 20px;
 }
 .adv-area{
-    height: 100px;
+    padding: 32px 60px;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
@@ -583,6 +592,9 @@ footer section{
 .sale{
     padding: 35px 30px;
     position: relative;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
 }
 .sale:hover{
     -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.1);
@@ -594,6 +606,7 @@ footer section{
 }
 .sale .sale-content-title{
     font-family: Harmonia_bold;
+    display: block;
     font-size: 18px;
     color: #34404b;
     margin-top: -8px;
@@ -601,7 +614,6 @@ footer section{
 }
 .sale .sale-character{
     font-size: 16px;
-    /*transition: all .1s linear;*/
 }
 .sale:hover .sale-character{
     opacity: 0;
@@ -659,8 +671,11 @@ footer section{
 .category-wrap .categories-list li{
     font-family: Harmonia_semibold;
     font-size: 16px;
-    line-height: 50px;
+    /*line-height: 50px;*/
     color: #34404b;
+}
+.category-wrap .categories-list li + li{
+    margin-top: 40px;
 }
 .category-wrap .categories-list li:hover{
     color: #ff5912;
