@@ -74,4 +74,7 @@ $( function() {
             controlNav: "thumbnails"
         });
     });
+
+    // formstaler.init
+    $('.custom-number').styler();
 });
