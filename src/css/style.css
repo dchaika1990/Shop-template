@@ -261,10 +261,22 @@ header .top-header .social-nav a:hover{
     text-align: center;
     line-height: 18px;
 }
+@media (max-width: 991px){
+    .bottom-header .header-nav{
+        display: none;
+    }
+    .slicknav_menu{
+        display: block;
+    }
+    .bottom-header .user-controls{
+        margin: 0;
+    }
+}
 .load-more{
     margin-top: 80px;
     padding: 26px 10px;
     background-color: #fff;
+    cursor: pointer;
 }
 span.circle{
     display: inline-block;
@@ -368,6 +380,17 @@ span.circle + span{
 .more-info-on-hover .item-controls li +li{
     margin-left: 30px;
 }
+@media (max-width: 1199px){
+    .item-description,
+    .more-info-on-hover{
+        padding: 0;
+    }
+}
+@media (max-width: 991px){
+    .item{
+        margin-bottom: 30px;
+    }
+}
 .icon-share-ic:hover{
     background-position: -44px -59px;
 }
@@ -403,6 +426,15 @@ span.circle + span{
     font-family: Harmonia_italic;
     font-size: 14px;
     color: #34404b;
+}
+@media (max-width: 991px){
+    .subscribe-form{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .subscribe-description{
+        margin-bottom: 30px;
+    }
 }
 footer{
     padding: 90px 0;
@@ -460,6 +492,10 @@ footer section{
 /*ALL STALES START*/
 
         /*ITEM CAROUSEL*/
+.item-flexslider{
+    position: relative;
+    padding-left: calc(8.3333% + 30px);
+}
 .items-carousel{
     min-height: 650px;
     background: url("../img/carousel-img-1.jpg") no-repeat center/cover;
@@ -548,7 +584,7 @@ footer section{
     margin-right: 20px;
 }
 .adv-area{
-    padding: 32px 60px;
+    padding: 32px 0;
     justify-content: center;
     text-align: center;
     border: 1px solid #eaedef;
@@ -561,7 +597,16 @@ footer section{
     letter-spacing: .6em;
     color: rgba(52,64,75,.4);
 }
-
+@media (max-width: 1199px){
+    .kit{
+        padding: 20px 25px;
+    }
+}
+@media (max-width: 991px){
+    .kit{
+        margin-bottom: 30px;
+    }
+}
         /*BEST SALES*/
 .sale{
     padding: 35px 30px;
@@ -582,6 +627,9 @@ footer section{
     color: #34404b;
     margin-top: -8px;
     margin-bottom: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .sale .sale-character{
     font-size: 16px;
@@ -610,6 +658,17 @@ footer section{
 }
 .sale-character-on-hover span{
     margin-right: 10px;
+}
+@media (max-width: 1199px){
+    .sale .sale-content{
+        padding-left: 10px;
+    }
+    .sale-img{
+        padding-right: 10px;
+    }
+    .sale-character-on-hover{
+        left: 40%;
+    }
 }
 .category-wrap{
     padding-top: 120px;

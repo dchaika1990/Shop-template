@@ -1,10 +1,10 @@
 .jq-number {
 	position: relative;
 	vertical-align: middle;
-	padding: 0 32px;
+	padding: 0 25px;
 }
 .jq-number__field {
-	width: 30px;
+	width: 45px;
 }
 .jq-number__field input {
 	-webkit-box-sizing: border-box;
@@ -35,8 +35,8 @@
 	        transform: translateX(-5px);
 }
 .jq-number__spin.minus {
-	top: 0;
-	bottom: a;
+	right: 0;
+	left: auto;
 }
 .jq-number__spin:active {
 	background: #F5F5F5;
@@ -51,8 +51,8 @@
 }
 
 .jq-number__spin.plus {
-	right: 0;
-	left: auto;
+	top: 0;
+	bottom: auto;
 }
 .jq-number__spin:before {
 	content: '';
