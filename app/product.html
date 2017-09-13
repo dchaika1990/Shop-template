@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/slicknav.css">
 
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/fonts.css">
@@ -29,7 +30,7 @@
 </head>
 <body>
 <!--HEADER START-->
-<header>
+<header class="header white-bg">
     <div class="top-header">
         <div class="container">
             <div class="flex-container justify-sp-between">
@@ -79,7 +80,10 @@
     <div class="product-wrap white-bg">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5 col-xs-12">
+                    <div class="title big orange-text text-center hidden-lg hidden-md">
+                        <span>FULL WINTER KIT</span>
+                    </div>
                     <div class="product-carusel center-block">
                         <div class="flexslider">
                             <ul class="slides">
@@ -96,9 +100,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-7 col-xs-12">
                     <div class="product-description">
-                        <div class="title big orange-text">
+                        <div class="title big orange-text hidden-xs hidden-sm">
                             <span>FULL WINTER KIT</span>
                         </div>
                         <span>Half Jacket + Skiny Trousers + Boot leather</span>
@@ -129,9 +133,10 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="form-border"></div>
                                     <div class="quantity flex-container align-center">
                                         <span>Choose Quantity</span>
-                                        <input type="number" name="Quantity" class="custom-number">
+                                        <input type="number" name="Quantity" class="custom-number" min="1" value="1">
                                     </div>
                                 </form>
                             </div>
@@ -322,8 +327,8 @@
 </main>
 <!--MAIN END-->
 <!--FOOTER START-->
-<footer class="white-bg">
-    <section>
+    <footer class="white-bg">
+    <section >
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -336,20 +341,22 @@
                             </div>
                             <span>shopy c 2015 . your copy right here</span>
                         </div>
-                        <ul class="footer-nav-list">
-                            <li>about us</li>
-                            <li>contact us</li>
-                            <li>contact us</li>
-                        </ul>
-                        <ul class="footer-nav-list">
-                            <li>our feed</li>
-                            <li>terms and conditions</li>
-                            <li>our privacy</li>
-                        </ul>
-                        <ul class="footer-nav-list">
-                            <li>join us</li>
-                            <li>live support</li>
-                        </ul>
+                        <div class="footer-links">
+                            <ul class="footer-nav-list">
+                                <li>about us</li>
+                                <li>contact us</li>
+                                <li>contact us</li>
+                            </ul>
+                            <ul class="footer-nav-list">
+                                <li>our feed</li>
+                                <li>terms and conditions</li>
+                                <li>our privacy</li>
+                            </ul>
+                            <ul class="footer-nav-list">
+                                <li>join us</li>
+                                <li>live support</li>
+                            </ul>
+                        </div>
                         <div class="payment-methods">
                             <div class="payment-methods-title">
                                 <span>Payment Methods</span>
@@ -376,6 +383,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/jquery.formstyler.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
 <script src="js/plugins.min.js"></script>
 </body>
 </html>
