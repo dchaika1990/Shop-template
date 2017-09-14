@@ -474,11 +474,12 @@ span.circle + span{
     .subscribe-input{
         min-width: 185px;
     }
+    .subscribe-form form{
+        width: 100%;
+        justify-content: space-between;
+    }
 }
 @media (max-width: 479px){
-    .subscribe-form{
-        padding: 37px 15px;
-    }
     .subscribe-form form.flex-container{
         flex-wrap: wrap;
         justify-content: center;
@@ -488,6 +489,7 @@ span.circle + span{
     }
     .subscribe-input-group{
         margin: 0;
+        width: 100%;
     }
 }
 footer{
@@ -987,12 +989,13 @@ html .ui-button.ui-state-disabled:focus{
     margin-left: 20px;
 }
 .product-wrap{
-    padding: 100px 125px;
+    padding: 100px 0;
     margin-bottom: 60px;
 }
 .product-carusel{
     width: 330px;
 }
+
 .product-wrap .product-description > span{
     font-family: Harmonia_semibold;
     font-size: 18px;
@@ -1004,6 +1007,42 @@ html .ui-button.ui-state-disabled:focus{
     line-height: 30px;
     color: #495662;
     padding: 40px 0;
+}
+@media (max-width: 1199px){
+    .product-wrap .title{
+        font-size: 45px;
+    }
+}
+@media (max-width: 599px){
+    .product-wrap .title{
+        font-size: 36px;
+    }
+    .product-wrap .product-description > span{
+        font-size: 16px;
+    }
+    .product-wrap .product-description > p{
+        font-size: 14px;
+    }
+    .chose-size span,
+    .quantity span{
+        font-size: 16px;
+    }
+    .order-form form{
+        flex-wrap: wrap;
+    }
+    .quantity{
+        margin-top: 15px;
+    }
+    .form-border{
+        border: none;
+    }
+    .order-now{
+        flex-wrap: wrap;
+    }
+    ul.product-share{
+        order: 1;
+        width: 100%;
+    }
 }
 .order-now{
     padding-top: 40px;
@@ -1022,6 +1061,7 @@ html .ui-button.ui-state-disabled:focus{
 .order-now ul.product-share{
     margin-right: 25px;
 }
+
 @media (max-width: 991px){
     .mobile-sidebar-btn{
         display: inline-block;
