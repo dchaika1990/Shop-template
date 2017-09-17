@@ -470,9 +470,10 @@ span.circle + span{
     }
     .subscribe .subscribe-description span:last-child{
         margin-top: 10px;
+        line-height: 1.5;
     }
     .subscribe-input{
-        min-width: 185px;
+        min-width: 170px;
     }
     .subscribe-form form{
         width: 100%;
@@ -486,6 +487,9 @@ span.circle + span{
     }
     .subscribe-form button{
         margin-top: 25px;
+    }
+    .subscribe-form{
+        padding: 37px 20px;
     }
     .subscribe-input-group{
         margin: 0;
@@ -567,9 +571,11 @@ footer section{
         display: flex;
         flex-direction: column;
     }
+    .footer-content{
+        text-align: left;
+    }
     .footer-content .footer-nav-list li{
         margin-top: 20px;
-        padding-left: 38%;
     }
     .footer-content .footer-text{
         margin-bottom: 15px;

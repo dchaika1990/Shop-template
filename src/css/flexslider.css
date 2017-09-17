@@ -283,3 +283,14 @@ html[xmlns] .flexslider .slides {
     right: 10px;
   }
 }
+@media screen and (max-width: 479px){
+  .product-wrap .product-carusel {
+    width: 280px;
+  }
+  .product-carusel .slides li img{
+    width: 280px;
+  }
+  .flex-control-thumbs li{
+    width: 80px;
+  }
+}
