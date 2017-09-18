@@ -89,12 +89,11 @@ label{
 .orange-bg{
     background-color: #ff5912;
 }
-.fa-star{
-    color: #e9ecf3;
-}
-.fa-star.active{
-    color: #f55d44;
-}
+
+/*DEFAULT CLASSES END*/
+
+/*DEFAULT COMPONENT START*/
+
 .btn{
     font-family: Harmonia_semibold;
     font-size: 14px;
@@ -121,9 +120,12 @@ label{
             border-radius: 30px;
     padding: 18px 24px;
 }
-/*DEFAULT CLASSES END*/
-
-/*DEFAULT COMPONENT START*/
+.fa-star{
+    color: #e9ecf3;
+}
+.fa-star.active{
+    color: #f55d44;
+}
 .custom-icon{
     display: inline-block;
 }
@@ -154,7 +156,6 @@ label{
 .checkbox-group label{
     font-family: Harmonia_semibold;
     font-size: 16px;
-    /*line-height: 50px;*/
     color: #34404b;
     cursor: pointer;
 }
