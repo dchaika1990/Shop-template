@@ -207,6 +207,10 @@ html[xmlns] .flexslider .slides {
   zoom: 1;
   *display: inline;
 }
+.flex-control-nav li:hover{
+  background-color: #ff5912;
+  opacity: 0.7;
+}
 .flex-control-paging li a {
   width: 11px;
   height: 11px;
